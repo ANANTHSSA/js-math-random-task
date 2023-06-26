@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="log()">random</button>
+    <button onclick="text()">text</button>
+    <p>ananthssa</p>
+    <div id="result">
+
+    </div>
+    <script>
+        // function log(){
+        //     let button=document.getElementById('result');  
+        //     button.innerHTML=parseInt(Math.random()*23)
+        // }
+        let button=document.getElementById('result');  
+        let body=document.querySelector('body')
+        let para=document.querySelector('p');
+
+
+        //background color changing
+        function log(){
+            let x=Math.floor(Math.random()*255);
+         let y=Math.floor(Math.random()*255);
+         let z=Math.floor(Math.random()*255);
+         let color=`rgb(${x}+${y}+${z})`;
+         body.style.background=color;
+        }
+
+
+
+        // text color changing
+        function text(){
+            let x=Math.floor(Math.random()*255);
+         let y=Math.floor(Math.random()*255);
+         let z=Math.floor(Math.random()*255);
+         let tColor=`rgb(${x}+${y}+${z})`;
+         para.style.color=tColor;
+        }
+
+        
+
+    </script>
+</body>
+</html>
